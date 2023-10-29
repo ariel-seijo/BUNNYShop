@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Navbar */
+
+header {
+    z-index: 10;
+    height: 10vh;
+    padding: 20px;
+    background-color:rgb(139, 52, 106);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Seccion Hero */
+
+.carrousel {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: url("../img/presentacion-hero.jpg");
+    background-size: cover;
+}
+
+.texto-nombre-tienda {
+    background-color: rgb(139, 52, 106, 50%);
+    font-size: 100px;
+    color: white;
+    padding-inline: 30px;
+    border: 3px solid white;
+}
+
+.texto-productos {
+    font-size: 30px;
+    color: white;
+}
+.boton-presentacion {
+    height: 10vh;
+    background-color: rgb(139, 52, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-ofertas {
+    background-color: rgb(228, 162, 228);
+    color: black;
+    padding: 5px 15px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+}
+
+/* Seccion ofertas */
+
+.ofertas {
+    height: auto;
+    padding: 10px;
+    background-color: rgb(228, 162, 228);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas */
+
+.producto-tarjeta {
+    border: 2px solid;
+    box-shadow: 5px 5px black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(139, 52, 106);
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+}
+
+.ofertas div img {
+    height:280px;
+    width: 280px;
+}
+
+.nombre-producto {
+    margin-top: 4px;
+}
+
+.precio-producto {
+    color: white;
+}
+
+.boton-carrito {
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+    background-color: black;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+footer a img {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+/* Páginas en construcción */
+
+.contenido-vacio {
+    background-color: violet;
+    box-sizing: border-box;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-vacio img {
+    height: 300px;
+    width: 300px;
+}
+
+.contenido-vacio h2 {
+    color: white;
+}
