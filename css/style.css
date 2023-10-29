@@ -32,6 +32,7 @@ header {
 }
 
 .navbar {
+    z-index: 100;
     align-self: center;
     padding-top: 15px;
     background-color: rgb(139, 52, 106) !important;
@@ -50,7 +51,29 @@ header {
 
 /* Seccion Hero */
 
-.carrousel {
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 80vh;
+    position: relative;
+}
+
+.carousel-item {
+    height: 80vh;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    image-rendering: optimizeSpeed;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* .carrousel {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -59,19 +82,25 @@ header {
     height: 80vh;
     background-image: url("../img/presentacion-hero.jpg");
     background-size: cover;
-}
+} */
 
 .texto-nombre-tienda {
+    z-index: 30;
     background-color: rgb(139, 52, 106, 50%);
-    font-size: 100px;
+    font-size: 6.5em;
     color: white;
     padding-inline: 30px;
     border: 3px solid white;
+    margin-bottom: 95px;
+    position: absolute;
 }
 
 .texto-productos {
-    font-size: 30px;
-    color: white;
+    position: absolute;
+    z-index: 30;
+    font-size: 2em;
+    color: black;
+    margin-top: 95px;
 }
 .boton-presentacion {
     height: 10vh;
@@ -87,6 +116,7 @@ header {
     padding: 5px 15px;
     border: 2px solid black;
     box-shadow: 5px 5px black;
+    text-decoration: none;
 }
 
 /* Seccion ofertas */
@@ -109,8 +139,8 @@ header {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-around;
+    align-items:center;
     background-color: rgb(139, 52, 106);
     box-sizing: border-box;
     width: 300px;
@@ -118,23 +148,35 @@ header {
 }
 
 .ofertas div img {
-    height:280px;
+    height: 280px;
     width: 280px;
 }
 
+.producto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .nombre-producto {
-    margin-top: 4px;
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+    margin: 0;
 }
 
 .precio-producto {
+    font-size: 1.5em;
     color: white;
+    margin: 0;
 }
 
 .boton-carrito {
-    margin-top: 5px;
     background-color: black;
     color: white;
     padding: 5px 15px;
+    text-decoration: none;
 }
 
 /* Footer */
@@ -143,7 +185,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100px;
+    height: 120px;
     padding: 10px;
     background-color: black;
 }
@@ -180,4 +222,46 @@ footer a img {
 
 .contenido-vacio h2 {
     color: white;
+}
+
+@media (max-width: 720px) {
+    .texto-nombre-tienda {
+        font-size: 5em;
+        margin-bottom: 80px;
+    }
+
+    .texto-productos {
+        margin-top: 80px;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 450px) {
+        .navbar-brand h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .texto-nombre-tienda {
+        font-size: 3em;
+        margin-bottom: 55px;
+    }
+
+    .texto-productos {
+        margin-top: 55px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 400px) {
+    .texto-nombre-tienda {
+        font-size: 2em;
+        margin-bottom: 45px;
+    }
+
+    .texto-productos {
+        margin-top: 45px;
+        font-size: 0.9em;
+    }
 }
